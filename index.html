@@ -1,0 +1,277 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>N N Tarun | Academic Website</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"><style>
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter;}
+
+body{
+background:linear-gradient(135deg,#dfefff,#ffffff);
+overflow-x:hidden;
+color:#111;
+}
+
+/* BACKGROUND */
+
+.bg{
+position:fixed;
+width:500px;
+height:500px;
+border-radius:50%;
+filter:blur(140px);
+z-index:-1;
+animation:float 8s ease-in-out infinite alternate;
+}
+
+.bg1{background:#7cc4ff;top:-150px;left:-100px;}
+.bg2{background:#a5d8ff;bottom:-150px;right:-100px;}
+.bg3{background:#cce9ff;top:40%;left:40%;}
+
+@keyframes float{
+from{transform:translateY(0)}
+to{transform:translateY(40px)}
+}
+
+/* NAV */
+
+nav{
+position:fixed;
+width:100%;
+top:0;
+background:rgba(255,255,255,0.4);
+backdrop-filter:blur(12px);
+padding:18px 60px;
+display:flex;
+justify-content:space-between;
+z-index:1000;
+border-bottom:1px solid rgba(255,255,255,0.3);
+}
+
+.logo{font-weight:700;color:#0077ff;font-size:20px;}
+.menu{display:flex;gap:20px;}
+.menu a{text-decoration:none;color:#222;font-weight:500;}
+
+/* GLASS */
+
+.glass{
+background:rgba(255,255,255,0.25);
+backdrop-filter:blur(25px);
+border:1px solid rgba(255,255,255,0.4);
+box-shadow:0 8px 32px rgba(0,0,0,0.08);
+border-radius:18px;
+padding:30px;
+}
+
+/* HERO */
+
+.hero{
+padding:140px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+gap:50px;
+}
+
+.hero-text{
+animation:fadeUp 1s ease forwards;
+}
+
+.hero h1{
+font-size:46px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#444;
+line-height:1.6;
+}
+
+.hero img{
+width:320px;
+border-radius:20px;
+box-shadow:0 20px 40px rgba(0,0,0,0.15);
+animation:float 6s ease-in-out infinite alternate;
+}
+
+/* SECTION */
+
+section{
+padding:80px 8%;
+opacity:0;
+transform:translateY(40px);
+transition:0.8s ease;
+}
+
+section.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.title{
+font-size:28px;
+margin-bottom:35px;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+/* CARD */
+
+.card{
+padding:20px;
+border-radius:15px;
+background:rgba(255,255,255,0.3);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,0.4);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.02);
+}
+
+/* EDUCATION */
+
+.edu-header{
+display:flex;
+align-items:center;
+gap:12px;
+margin-bottom:10px;
+}
+
+.edu-header img{
+width:55px;
+}
+
+/* CONTACT */
+
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.contact-card{
+padding:25px;
+border-radius:15px;
+background:rgba(255,255,255,0.3);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,0.4);
+}
+
+.contact-card h3{
+margin-bottom:10px;
+color:#0077ff;
+}
+
+.contact-card a{
+color:#0077ff;
+text-decoration:none;
+}
+
+/* FOOTER */
+
+footer{
+padding:40px;
+text-align:center;
+background:#f0f7ff;
+}
+
+/* KEYFRAMES */
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style></head><body><div class="bg bg1"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div><nav>
+<div class="logo">N N Tarun</div>
+<div class="menu">
+<a>Home</a>
+<a>Research</a>
+<a>Publications</a>
+<a>Teaching</a>
+<a>Articles</a>
+<a>Books</a>
+<a>Events</a>
+<a>Gallery</a>
+<a>Contact</a>
+</div>
+</nav><!-- HERO --><section class="hero show"><div class="hero-text"><h1>Dr. N N Tarun</h1><div class="glass">
+<p>
+Academic researcher specializing in governance, political economy,
+development studies and public policy. His work spans journal publications,
+books, newspaper columns, and international conferences.
+</p>
+</div></div><img src="https://via.placeholder.com/320"></section><!-- EDUCATION --><section><h2 class="title">Educational Background</h2><div class="grid"><div class="card">
+<div class="edu-header">
+<img src="https://upload.wikimedia.org/wikipedia/en/7/7d/University_of_Bath_logo.svg">
+<div>
+<h3>PhD in Economics</h3>
+<p>University of Bath, UK</p>
+</div>
+</div>
+</div><div class="card">
+<div class="edu-header">
+<img src="https://upload.wikimedia.org/wikipedia/en/5/56/University_of_Leeds_logo.svg">
+<div>
+<h3>MA in Economics</h3>
+<p>University of Leeds, UK</p>
+</div>
+</div>
+</div><div class="card">
+<div class="edu-header">
+<img src="https://upload.wikimedia.org/wikipedia/en/2/26/University_of_Dhaka_logo.svg">
+<div>
+<h3>MSS in Economics</h3>
+<p>University of Dhaka</p>
+</div>
+</div>
+</div></div></section><!-- CONTACT --><section><h2 class="title">Contact</h2><div class="contact-grid"><div class="contact-card">
+<h3>📍 Office</h3>
+<p>Room 3006, Business School Building, IUB, Dhaka</p>
+</div><div class="contact-card">
+<h3>📧 Email</h3>
+<p>nntarun@gmail.com<br>nntarun@iub.edu.bd</p>
+</div><div class="contact-card">
+<h3>📞 Phone</h3>
+<p>+1 514 464 6813<br>+8801925339570</p>
+</div><div class="contact-card">
+<h3>🌐 Social</h3>
+<p>
+<a href="https://www.facebook.com/nntarun">Facebook</a><br>
+<a href="https://www.linkedin.com/in/n-n-tarun-chakravorty/">LinkedIn</a>
+</p>
+</div></div></section><footer>
+© 2026 N N Tarun Academic Website
+</footer><script>
+
+/* Scroll Reveal */
+
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+sections.forEach(sec => {
+const top = sec.getBoundingClientRect().top;
+if(top < window.innerHeight - 100){
+sec.classList.add("show");
+}
+});
+});
+
+</script></body>
+</html>
